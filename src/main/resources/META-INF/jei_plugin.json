@@ -1,0 +1,5 @@
+{
+  "plugins": [
+    "me.creeperscrown.rackitup.integration.jei.JEIPlugin"
+  ]
+}

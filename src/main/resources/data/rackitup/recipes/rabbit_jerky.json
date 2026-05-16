@@ -1,0 +1,11 @@
+{
+  "type": "rackitup:drying",
+  "ingredient": {
+    "item": "minecraft:rabbit"
+  },
+  "result": {
+    "item": "rackitup:rabbit_jerky",
+    "count": 1
+  },
+  "time": 12000
+}

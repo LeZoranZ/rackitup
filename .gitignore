@@ -1,0 +1,19 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Minecraft run data
+run/
+run-data/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

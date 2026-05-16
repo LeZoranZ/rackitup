@@ -1,0 +1,11 @@
+{
+  "type": "rackitup:drying",
+  "ingredient": {
+    "item": "minecraft:mutton"
+  },
+  "result": {
+    "item": "rackitup:mutton_jerky",
+    "count": 1
+  },
+  "time": 12000
+}
