@@ -60,7 +60,14 @@ public class ConfigScreen extends Screen {
                         .tooltip(Tooltip.create(Component.translatable("tooltip.rackitup.campfireBoosting").withStyle(Style.EMPTY.withColor(TextColor.fromLegacyFormat(ChatFormatting.YELLOW)))))
                         .build());
 
-        boostAmount = new EditBox(this.font, centerX-100, 80, buttonWidth, buttonHeight, Component.translatable("config.rackitup.boostAmount"));
+        this.addRenderableWidget(
+                Button.builder(Component.translatable("config.rackitup.boostAmount"),
+                                btn -> {}
+                        ).bounds(centerX-100, 80, buttonWidth-(buttonWidth/4)-5, buttonHeight)
+                        .tooltip(Tooltip.create(Component.translatable("tooltip.rackitup.boostAmount").withStyle(Style.EMPTY.withColor(TextColor.fromLegacyFormat(ChatFormatting.YELLOW)))))
+                        .build());
+
+        boostAmount = new EditBox(this.font, centerX+(buttonWidth/4)-1, 80, buttonWidth/4, buttonHeight, Component.translatable("config.rackitup.boostAmount"));
         boostAmount.setValue(String.valueOf(Config.CAMPFIRE_BOOST.get()));
         boostAmount.setFilter(s -> s.matches("\\d*"));
         boostAmount.setResponder(v->dirty=true);
@@ -95,7 +102,7 @@ public class ConfigScreen extends Screen {
         try{
             dirty=false;
             int boost = Integer.parseInt(boostAmount.getValue());
-            boost = Math.max(0, boost);
+            boost = Math.max(1, boost);
             if(boost!=Config.CAMPFIRE_BOOST.get()){Config.CAMPFIRE_BOOST.set(boost); dirty=true;}
         }catch(NumberFormatException ex){}
         if(dirty){

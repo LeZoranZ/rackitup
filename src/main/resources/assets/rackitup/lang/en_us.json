@@ -20,6 +20,7 @@
   "jei.rackitup.drying_time.hours": "%sh ",
   "jei.rackitup.drying_time.minutes": "%sm ",
   "jei.rackitup.drying_time.seconds": "%ss",
+  "jei.rackitup.drying_speed_mult": "Speed Multiplier: x%s",
 
   "config.rackitup.title": "Rack It Up",
   "config.rackitup.boolean": "%s: %s",

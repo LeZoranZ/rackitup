@@ -12,7 +12,6 @@ import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CampfireBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -84,7 +83,7 @@ public class DryingRackBlockEntity extends BlockEntity {
         if(weatherInteraction && isRaining){
             rack.progress = Math.max(0, rack.progress-1);
         } else {
-            int boost = (boosting && isCampfire && isLit) ? Config.CAMPFIRE_BOOST.get() : 1;
+            int boost = (boosting && isCampfire && isLit) ? Math.max(1, Config.CAMPFIRE_BOOST.get()) : 1;
             rack.progress += boost;
         }
 
