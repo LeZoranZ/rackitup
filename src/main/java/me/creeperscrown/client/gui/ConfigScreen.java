@@ -1,4 +1,4 @@
-package me.creeperscrown.rackitup.gui;
+package me.creeperscrown.client.gui;
 
 import me.creeperscrown.rackitup.Config;
 import net.minecraft.ChatFormatting;

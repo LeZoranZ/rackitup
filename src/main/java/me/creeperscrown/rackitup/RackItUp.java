@@ -1,25 +1,20 @@
 package me.creeperscrown.rackitup;
 
-import com.mojang.logging.LogUtils;
 import me.creeperscrown.rackitup.block.MBlocks;
 import me.creeperscrown.rackitup.block.entity.MBlockEntities;
-import me.creeperscrown.rackitup.gui.ConfigScreen;
 import me.creeperscrown.rackitup.item.MItems;
 import me.creeperscrown.rackitup.recipe.MRecipes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import org.slf4j.Logger;
 
 @Mod(RackItUp.MODID)
 public class RackItUp {
@@ -47,7 +42,6 @@ public class RackItUp {
 
     public RackItUp() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        modEventBus.addListener(this::commonSetup);
 
         MBlocks.registerBlocks(modEventBus);
         MItems.registerItems(modEventBus);
@@ -59,14 +53,6 @@ public class RackItUp {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-        ModLoadingContext.get().registerExtensionPoint(
-                ConfigScreenHandler.ConfigScreenFactory.class,
-                ()-> new ConfigScreenHandler.ConfigScreenFactory(
-                        (mc, parent) -> new ConfigScreen(parent)
-                )
-        );
     }
-
-    private void commonSetup(final FMLCommonSetupEvent event){}
 
 }
