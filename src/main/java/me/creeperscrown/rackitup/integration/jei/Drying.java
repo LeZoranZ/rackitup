@@ -56,7 +56,7 @@ public class Drying implements IRecipeCategory<DryingRecipe> {
         if(Config.BOOSTER_CAMPFIRES.get()){
             int boost = Math.max(1, Config.CAMPFIRE_BOOST.get());
             int spedTime = Math.round((float) time/boost);
-            guiGraphics.drawString(Minecraft.getInstance().font, convertTime(spedTime), 33, 30, 0xFFFF55, false);
+            guiGraphics.drawString(Minecraft.getInstance().font, convertTime(spedTime), 33, 30, 0xFF5555, false);
         }
 
         guiGraphics.drawString(Minecraft.getInstance().font, text, 65, 30, 0x7E7E7E, false);
