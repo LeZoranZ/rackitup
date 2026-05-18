@@ -24,10 +24,23 @@ public class RackItUp {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     public static final RegistryObject<CreativeModeTab> RACK_IT_UP = TABS.register("rack_it_up", () -> CreativeModeTab.builder()
-            .icon(()->MBlocks.DRYING_RACK.get().asItem().getDefaultInstance())
+            .icon(()->MBlocks.OAK_DRYING_RACK.get().asItem().getDefaultInstance())
             .title(Component.translatable("itemGroup.rack_it_up"))
             .displayItems((parameters, output) -> {
+                //Racks
                 output.accept(MBlocks.DRYING_RACK.get());
+                output.accept(MBlocks.OAK_DRYING_RACK.get());
+                output.accept(MBlocks.SPRUCE_DRYING_RACK.get());
+                output.accept(MBlocks.BIRCH_DRYING_RACK.get());
+                output.accept(MBlocks.JUNGLE_DRYING_RACK.get());
+                output.accept(MBlocks.ACACIA_DRYING_RACK.get());
+                output.accept(MBlocks.DARK_OAK_DRYING_RACK.get());
+                output.accept(MBlocks.MANGROVE_DRYING_RACK.get());
+                output.accept(MBlocks.CHERRY_DRYING_RACK.get());
+                output.accept(MBlocks.BAMBOO_DRYING_RACK.get());
+                output.accept(MBlocks.CRIMSON_DRYING_RACK.get());
+                output.accept(MBlocks.WARPED_DRYING_RACK.get());
+                //Food
                 output.accept(MItems.BEEF_JERKY.get());
                 output.accept(MItems.CHICKEN_JERKY.get());
                 output.accept(MItems.TROPICAL_FISH_JERKY.get());

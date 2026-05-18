@@ -37,7 +37,7 @@ public class Drying implements IRecipeCategory<DryingRecipe> {
 
     public Drying(IGuiHelper helper){
         this.background = helper.createBlankDrawable(100, 40);
-        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, MBlocks.DRYING_RACK.get().asItem().getDefaultInstance());
+        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, MBlocks.OAK_DRYING_RACK.get().asItem().getDefaultInstance());
         this.sprite = helper.drawableBuilder(SPRITE, 0, 0, 16, 4).setTextureSize(16, 4).build();
         this.campfire = helper.drawableBuilder(CAMPFIRE, 0, 0, 16, 16).setTextureSize(16, 16).build();
         this.arrow = helper.createAnimatedRecipeArrow(200);

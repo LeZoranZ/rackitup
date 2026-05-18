@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dryingRack",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:jungle_slab"
+    }
+  },
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "item": "rackitup:jungle_drying_rack"
+  },
+  "show_notification": true
+}

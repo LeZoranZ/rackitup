@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "rackitup:oak_drying_rack"
+          "name": "rackitup:acacia_drying_rack"
         }
       ],
       "rolls": 1
     }
   ],
-  "random_sequence": "rackitup:blocks/oak_drying_rack"
+  "random_sequence": "rackitup:blocks/acacia_drying_rack"
 }

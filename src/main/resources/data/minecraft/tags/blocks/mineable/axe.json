@@ -1,6 +1,17 @@
 {
   "replace": false,
   "values": [
-    "rackitup:drying_rack"
+    "rackitup:drying_rack",
+    "rackitup:oak_drying_rack",
+    "rackitup:spruce_drying_rack",
+    "rackitup:birch_drying_rack",
+    "rackitup:jungle_drying_rack",
+    "rackitup:acacia_drying_rack",
+    "rackitup:dark_oak_drying_rack",
+    "rackitup:mangrove_drying_rack",
+    "rackitup:cherry_drying_rack",
+    "rackitup:bamboo_drying_rack",
+    "rackitup:crimson_drying_rack",
+    "rackitup:warped_drying_rack"
   ]
 }

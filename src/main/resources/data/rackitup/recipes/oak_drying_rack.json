@@ -4,14 +4,14 @@
   "category": "misc",
   "key": {
     "X": {
-      "tag": "minecraft:wooden_slabs"
+      "item": "minecraft:oak_slab"
     }
   },
   "pattern": [
     "XXX"
   ],
   "result": {
-    "item": "rackitup:drying_rack"
+    "item": "rackitup:oak_drying_rack"
   },
   "show_notification": true
 }

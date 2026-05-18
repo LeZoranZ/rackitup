@@ -9,20 +9,20 @@
     }
   },
   "textures": {
-    "leg": "minecraft:block/oak_planks",
-    "particle": "#leg"
+    "texture": "minecraft:block/oak_planks",
+    "particle": "#texture"
   },
   "elements": [
     {
       "from": [ 0, 12, 6 ],
       "to": [ 16, 16, 10 ],
       "faces": {
-        "north": { "texture": "#leg", "uv": [  0,  0, 16,  4 ] },
-        "east":  { "texture": "#leg", "uv": [  0,  0,  4,  4 ] },
-        "south": { "texture": "#leg", "uv": [  0,  0, 16,  4 ] },
-        "west":  { "texture": "#leg", "uv": [ 12,  0, 16,  4 ] },
-        "up":    { "texture": "#leg", "uv": [  0, 12, 16, 16 ] },
-        "down":  { "texture": "#leg", "uv": [  0,  0, 16,  4 ] }
+        "north": { "texture": "#texture", "uv": [  0,  0, 16,  4 ] },
+        "east":  { "texture": "#texture", "uv": [  0,  0,  4,  4 ] },
+        "south": { "texture": "#texture", "uv": [  0,  0, 16,  4 ] },
+        "west":  { "texture": "#texture", "uv": [ 12,  0, 16,  4 ] },
+        "up":    { "texture": "#texture", "uv": [  0, 12, 16, 16 ] },
+        "down":  { "texture": "#texture", "uv": [  0,  0, 16,  4 ] }
       }
     }
   ]

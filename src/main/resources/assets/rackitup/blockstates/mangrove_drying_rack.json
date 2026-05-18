@@ -1,0 +1,53 @@
+{
+  "variants": {
+
+    "face=floor,facing=north": {
+      "model": "rackitup:block/mangrove_drying_rack_down",
+      "y": 180
+    },
+    "face=floor,facing=south": {
+      "model": "rackitup:block/mangrove_drying_rack_down"
+    },
+    "face=floor,facing=east": {
+      "model": "rackitup:block/mangrove_drying_rack_down",
+      "y": 270
+    },
+    "face=floor,facing=west": {
+      "model": "rackitup:block/mangrove_drying_rack_down",
+      "y": 90
+    },
+
+    "face=ceiling,facing=north": {
+      "model": "rackitup:block/mangrove_drying_rack",
+      "y": 180
+    },
+    "face=ceiling,facing=south": {
+      "model": "rackitup:block/mangrove_drying_rack"
+    },
+    "face=ceiling,facing=east": {
+      "model": "rackitup:block/mangrove_drying_rack",
+      "y": 270
+    },
+    "face=ceiling,facing=west": {
+      "model": "rackitup:block/mangrove_drying_rack",
+      "y": 90
+    },
+
+    "face=wall,facing=north": {
+      "model": "rackitup:block/mangrove_drying_rack_side"
+    },
+    "face=wall,facing=south": {
+      "model": "rackitup:block/mangrove_drying_rack_side",
+      "y": 180
+    },
+    "face=wall,facing=east": {
+      "model": "rackitup:block/mangrove_drying_rack_side",
+      "y": 90
+    },
+    "face=wall,facing=west": {
+      "model": "rackitup:block/mangrove_drying_rack_side",
+      "y": 270
+    }
+
+  }
+}
