@@ -25,14 +25,14 @@ import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.Nullable;
 
 public class Drying implements IRecipeCategory<DryingRecipe> {
-    public static final ResourceLocation ID = new ResourceLocation(RackItUp.MODID, "drying");
+    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(RackItUp.MODID, "drying");
     public static final RecipeType<DryingRecipe> DRYING = new RecipeType<>(ID, DryingRecipe.class);
     private final IDrawable background;
     private final IDrawable icon;
     private final IDrawable sprite;
     private final IDrawable campfire;
     private final IDrawableAnimated arrow;
-    private static final ResourceLocation SPRITE = new ResourceLocation(RackItUp.MODID, "textures/gui/drying_rack_sprite.png");
+    private static final ResourceLocation SPRITE = ResourceLocation.fromNamespaceAndPath(RackItUp.MODID, "textures/gui/drying_rack_sprite.png");
     private static final ResourceLocation CAMPFIRE = ResourceLocation.withDefaultNamespace("textures/item/campfire.png");
 
     public Drying(IGuiHelper helper){

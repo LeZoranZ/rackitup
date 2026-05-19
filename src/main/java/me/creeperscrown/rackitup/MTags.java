@@ -6,5 +6,5 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 public class MTags {
-    public static final TagKey<Item> VALID_CAMPFIRES = TagKey.create(Registries.ITEM, new ResourceLocation(RackItUp.MODID, "valid_campfires"));
+    public static final TagKey<Item> VALID_CAMPFIRES = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(RackItUp.MODID, "valid_campfires"));
 }

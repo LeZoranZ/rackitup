@@ -14,7 +14,7 @@ public class JEIPlugin implements IModPlugin {
 
     @Override
     public ResourceLocation getPluginUid() {
-        return new ResourceLocation(RackItUp.MODID, "jei_plugin");
+        return ResourceLocation.fromNamespaceAndPath(RackItUp.MODID, "jei_plugin");
     }
 
     @Override
