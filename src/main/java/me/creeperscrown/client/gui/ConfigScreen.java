@@ -69,7 +69,7 @@ public class ConfigScreen extends Screen {
 
         boostAmount = new EditBox(this.font, centerX+(buttonWidth/4)-1, 80, buttonWidth/4, buttonHeight, Component.translatable("config.rackitup.boostAmount"));
         boostAmount.setValue(String.valueOf(Config.CAMPFIRE_BOOST.get()));
-        boostAmount.setFilter(s -> s.matches("\\d*"));
+        boostAmount.setFilter(s -> s.matches("\\d+(\\.\\d*)?"));
         boostAmount.setResponder(v->dirty=true);
         this.addRenderableWidget(boostAmount).setTooltip(Tooltip.create(Component.translatable("tooltip.rackitup.boostAmount").withStyle(Style.EMPTY.withColor(TextColor.fromLegacyFormat(ChatFormatting.YELLOW)))));
 
@@ -101,7 +101,7 @@ public class ConfigScreen extends Screen {
     public void onClose() {
         try{
             dirty=false;
-            int boost = Integer.parseInt(boostAmount.getValue());
+            double boost = Double.parseDouble(boostAmount.getValue());
             boost = Math.max(1, boost);
             if(boost!=Config.CAMPFIRE_BOOST.get()){Config.CAMPFIRE_BOOST.set(boost); dirty=true;}
         }catch(NumberFormatException ex){}

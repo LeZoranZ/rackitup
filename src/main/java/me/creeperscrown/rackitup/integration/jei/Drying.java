@@ -36,7 +36,7 @@ public class Drying implements IRecipeCategory<DryingRecipe> {
     private static final ResourceLocation CAMPFIRE = ResourceLocation.withDefaultNamespace("textures/item/campfire.png");
 
     public Drying(IGuiHelper helper){
-        this.background = helper.createBlankDrawable(100, 40);
+        this.background = helper.createBlankDrawable(125, 40);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, MBlocks.OAK_DRYING_RACK.get().asItem().getDefaultInstance());
         this.sprite = helper.drawableBuilder(SPRITE, 0, 0, 16, 4).setTextureSize(16, 4).build();
         this.campfire = helper.drawableBuilder(CAMPFIRE, 0, 0, 16, 16).setTextureSize(16, 16).build();
@@ -48,23 +48,23 @@ public class Drying implements IRecipeCategory<DryingRecipe> {
         int time = recipe.getDryingTime();
         String text = convertTime(time);
 
-        arrow.draw(guiGraphics, 37, 10);
+        arrow.draw(guiGraphics, 51, 10);
 
-        sprite.draw(guiGraphics, 15, 8);
-        sprite.draw(guiGraphics, 65, 8);
+        sprite.draw(guiGraphics, 8, 9);
+        sprite.draw(guiGraphics, 101, 9);
 
         if(Config.BOOSTER_CAMPFIRES.get()){
-            int boost = Math.max(1, Config.CAMPFIRE_BOOST.get());
-            int spedTime = Math.round((float) time/boost);
-            guiGraphics.drawString(Minecraft.getInstance().font, convertTime(spedTime), 33, 30, 0xFF5555, false);
+            double boost = Math.max(1, Config.CAMPFIRE_BOOST.get());
+            int spedTime = (int) Math.round(time/boost);
+            guiGraphics.drawString(Minecraft.getInstance().font, convertTime(spedTime), 27, 31, 0xFF5555, false);
         }
 
-        guiGraphics.drawString(Minecraft.getInstance().font, text, 65, 30, 0x7E7E7E, false);
+        guiGraphics.drawString(Minecraft.getInstance().font, text, 53, 1, 0x7E7E7E, false);
     }
 
     @Override
     public int getWidth() {
-        return 100;
+        return 125;
     }
 
     @Override
@@ -89,15 +89,15 @@ public class Drying implements IRecipeCategory<DryingRecipe> {
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, DryingRecipe recipe, IFocusGroup iFocusGroup) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 15, 10).addIngredients(recipe.getIngredient());
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 65, 10).addItemStack(recipe.getResultItem(null));
+        builder.addSlot(RecipeIngredientRole.INPUT, 8, 10).addIngredients(recipe.getIngredient());
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 101, 10).addItemStack(recipe.getResultItem(null));
 
         boolean campfireRequired = Config.CAMPFIRE_REQUIRED.get();
         boolean boosting = Config.BOOSTER_CAMPFIRES.get();
 
         if(!campfireRequired && !boosting) return;
 
-        IRecipeSlotBuilder slot = builder.addSlot(RecipeIngredientRole.CATALYST, 15, 26).addIngredients(Ingredient.of(MTags.VALID_CAMPFIRES));
+        IRecipeSlotBuilder slot = builder.addSlot(RecipeIngredientRole.CATALYST, 8, 26).addIngredients(Ingredient.of(MTags.VALID_CAMPFIRES));
 
         if(boosting){
             slot.addRichTooltipCallback((view, tooltip) -> {tooltip.add(Component.translatable("jei.rackitup.drying_speed_mult", Config.CAMPFIRE_BOOST.get()).withStyle(ChatFormatting.GOLD));});
