@@ -16,10 +16,10 @@ public class Config
             .comment("Whether campfires should speed up the drying process")
             .comment("Default: true")
             .define("booster_campfires", true);
-    public static final ForgeConfigSpec.IntValue CAMPFIRE_BOOST = BUILDER
+    public static final ForgeConfigSpec.DoubleValue CAMPFIRE_BOOST = BUILDER
             .comment("Campfire drying speed multiplier")
-            .comment("Default: 2")
-            .defineInRange("campfire_boost", 2, 1, Integer.MAX_VALUE);
+            .comment("Default: 2.0")
+            .defineInRange("campfire_boost", 2.0, 1.0, Double.MAX_VALUE);
     public static final ForgeConfigSpec.BooleanValue WEATHER_INTERACTIONS = BUILDER
             .comment("Should direct rainfall make drying racks lose progress?")
             .comment("Default: false")

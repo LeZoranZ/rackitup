@@ -27,8 +27,8 @@ import java.util.Optional;
 
 public class DryingRackBlockEntity extends BlockEntity {
 
-    private int progress = 0;
-    private int maxProgress = 0;
+    private double progress = 0;
+    private double maxProgress = 0;
 
     private final ItemStackHandler inventory = new ItemStackHandler(2){
         @Override
@@ -83,7 +83,7 @@ public class DryingRackBlockEntity extends BlockEntity {
         if(weatherInteraction && isRaining){
             rack.progress = Math.max(0, rack.progress-1);
         } else {
-            int boost = (boosting && isCampfire && isLit) ? Math.max(1, Config.CAMPFIRE_BOOST.get()) : 1;
+            double boost = (boosting && isCampfire && isLit) ? Math.max(1, Config.CAMPFIRE_BOOST.get()) : 1;
             rack.progress += boost;
         }
 
@@ -104,7 +104,7 @@ public class DryingRackBlockEntity extends BlockEntity {
     protected void saveAdditional(CompoundTag tag) {
         super.saveAdditional(tag);
         tag.put("inventory", inventory.serializeNBT());
-        tag.putInt("progress", progress);
+        tag.putDouble("progress", progress);
     }
 
     @Override
@@ -118,7 +118,7 @@ public class DryingRackBlockEntity extends BlockEntity {
     public CompoundTag getUpdateTag() {
         CompoundTag tag = new CompoundTag();
         tag.put("inventory", inventory.serializeNBT());
-        tag.putInt("progress", progress);
+        tag.putDouble("progress", progress);
         return tag;
     }
 
