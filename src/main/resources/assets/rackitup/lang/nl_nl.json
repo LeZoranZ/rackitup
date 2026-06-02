@@ -1,0 +1,47 @@
+{
+  "itemGroup.rack_it_up": "Rack It Up",
+
+  "block.rackitup.drying_rack": "Droogrek",
+  "block.rackitup.oak_drying_rack": "Eikenhouten droogrek",
+  "block.rackitup.spruce_drying_rack": "Sparrenhouten droogrek",
+  "block.rackitup.birch_drying_rack": "Berkenhouten droogrek",
+  "block.rackitup.jungle_drying_rack": "Oerwoudhouten droogrek",
+  "block.rackitup.acacia_drying_rack": "Acaciahouten droogrek",
+  "block.rackitup.dark_oak_drying_rack": "Donkereikenhouten droogrek",
+  "block.rackitup.mangrove_drying_rack": "Mangrovehouten droogrek",
+  "block.rackitup.cherry_drying_rack": "Kersenhouten droogrek",
+  "block.rackitup.bamboo_drying_rack": "Bamboedroogrek",
+  "block.rackitup.crimson_drying_rack": "Helrood houten droogrek",
+  "block.rackitup.warped_drying_rack": "Spookachtig houten droogrek",
+
+  "item.rackitup.beef_jerky": "Gedroogd rundvlees",
+  "item.rackitup.chicken_jerky": "Gedroogde kip",
+  "item.rackitup.tropical_fish_jerky": "Gedroogde tropische vis",
+  "item.rackitup.cod_jerky": "Gedroogde kabeljauw",
+  "item.rackitup.monster_jerky": "Gedroogd monstervlees",
+  "item.rackitup.mutton_jerky": "Gedroogd schapenvlees",
+  "item.rackitup.pork_jerky": "Gedroogd varkensvlees",
+  "item.rackitup.pufferfish_jerky": "Gedroogde kogelvis",
+  "item.rackitup.rabbit_jerky": "Gedroogd konijnenvlees",
+  "item.rackitup.salmon_jerky": "Gedroogde zalm",
+
+  "recipeType.drying": "Drogen",
+
+  "jei.rackitup.drying_time": "%ss",
+  "jei.rackitup.drying_time.hours": "%sh ",
+  "jei.rackitup.drying_time.minutes": "%sm ",
+  "jei.rackitup.drying_time.seconds": "%ss",
+  "jei.rackitup.drying_speed_mult": "Snelheidvermenigvuldiger: x%s",
+
+  "config.rackitup.title": "Rack It Up",
+  "config.rackitup.boolean": "%s: %s",
+  "config.rackitup.requireCampfire": "Campvuur vereist",
+  "config.rackitup.weatherInteractions": "Weerinteractie inschakelen",
+  "config.rackitup.campfireBoosting": "Voortgang kampvuurboost",
+  "config.rackitup.boostAmount": "Vermenigvuldiger kampvuurboost",
+
+  "tooltip.rackitup.requireCampfire": "Droogrekken werken alleen als er een kampvuur onder staat",
+  "tooltip.rackitup.weatherInteractions": "Blootstelling aan regen maakt het droogproces ongedaan",
+  "tooltip.rackitup.campfireBoosting": "Droogrekken werken sneller als er een kampvuur onder staat",
+  "tooltip.rackitup.boostAmount": "Hoeveel sneller het drogen gaat met kampvuur eronder (vermenigvuldiger)"
+}
