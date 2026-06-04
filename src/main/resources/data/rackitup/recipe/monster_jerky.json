@@ -1,0 +1,11 @@
+{
+  "type": "rackitup:drying",
+  "ingredient": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "result": {
+    "id": "rackitup:monster_jerky",
+    "count": 1
+  },
+  "time": 12000
+}

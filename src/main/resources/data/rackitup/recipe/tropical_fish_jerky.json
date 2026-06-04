@@ -1,0 +1,11 @@
+{
+  "type": "rackitup:drying",
+  "ingredient": {
+    "item": "minecraft:tropical_fish"
+  },
+  "result": {
+    "id": "rackitup:tropical_fish_jerky",
+    "count": 1
+  },
+  "time": 12000
+}

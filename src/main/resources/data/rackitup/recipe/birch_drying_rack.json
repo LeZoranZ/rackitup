@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dryingRack",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:birch_slab"
+    }
+  },
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "id": "rackitup:birch_drying_rack"
+  },
+  "show_notification": true
+}

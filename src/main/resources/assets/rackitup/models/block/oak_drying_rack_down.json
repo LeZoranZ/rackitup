@@ -1,0 +1,6 @@
+{
+  "parent": "rackitup:block/drying_rack_down",
+  "textures": {
+    "texture": "minecraft:block/oak_planks"
+  }
+}

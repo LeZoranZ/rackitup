@@ -1,0 +1,11 @@
+{
+  "type": "rackitup:drying",
+  "ingredient": {
+    "item": "minecraft:porkchop"
+  },
+  "result": {
+    "id": "rackitup:pork_jerky",
+    "count": 1
+  },
+  "time": 12000
+}

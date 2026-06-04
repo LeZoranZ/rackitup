@@ -1,0 +1,5 @@
+{
+  "plugins": [
+    "me.zoranz.rackitup.integration.jei.JEIPlugin"
+  ]
+}

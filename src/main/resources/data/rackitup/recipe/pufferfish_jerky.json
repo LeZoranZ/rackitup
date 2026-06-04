@@ -1,0 +1,11 @@
+{
+  "type": "rackitup:drying",
+  "ingredient": {
+    "item": "minecraft:pufferfish"
+  },
+  "result": {
+    "id": "rackitup:pufferfish_jerky",
+    "count": 1
+  },
+  "time": 12000
+}

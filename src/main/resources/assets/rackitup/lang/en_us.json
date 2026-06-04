@@ -1,0 +1,50 @@
+{
+  "tab.rackitup.name": "Rack It Up",
+
+  "block.rackitup.drying_rack": "Drying Rack",
+  "block.rackitup.oak_drying_rack": "Oak Drying Rack",
+  "block.rackitup.spruce_drying_rack": "Spruce Drying Rack",
+  "block.rackitup.birch_drying_rack": "Birch Drying Rack",
+  "block.rackitup.jungle_drying_rack": "Jungle Drying Rack",
+  "block.rackitup.acacia_drying_rack": "Acacia Drying Rack",
+  "block.rackitup.dark_oak_drying_rack": "Dark Oak Drying Rack",
+  "block.rackitup.mangrove_drying_rack": "Mangrove Drying Rack",
+  "block.rackitup.cherry_drying_rack": "Cherry Drying Rack",
+  "block.rackitup.bamboo_drying_rack": "Bamboo Drying Rack",
+  "block.rackitup.crimson_drying_rack": "Crimson Drying Rack",
+  "block.rackitup.warped_drying_rack": "Warped Drying Rack",
+
+  "item.rackitup.beef_jerky": "Beef Jerky",
+  "item.rackitup.chicken_jerky": "Chicken Jerky",
+  "item.rackitup.tropical_fish_jerky": "Tropical Fish Jerky",
+  "item.rackitup.cod_jerky": "Cod Jerky",
+  "item.rackitup.monster_jerky": "Monster Jerky",
+  "item.rackitup.mutton_jerky": "Mutton Jerky",
+  "item.rackitup.pork_jerky": "Pork Jerky",
+  "item.rackitup.pufferfish_jerky": "Pufferfish Jerky",
+  "item.rackitup.rabbit_jerky": "Rabbit Jerky",
+  "item.rackitup.salmon_jerky": "Salmon Jerky",
+
+  "recipeType.drying": "Drying",
+
+  "jei.rackitup.drying_time": "%ss",
+  "jei.rackitup.drying_time.hours": "%sh ",
+  "jei.rackitup.drying_time.minutes": "%sm ",
+  "jei.rackitup.drying_time.seconds": "%ss",
+  "jei.rackitup.drying_speed_mult": "Speed Multiplier: x%s",
+
+  "rackitup.configuration.title": "Rack It Up",
+  "rackitup.configuration.section.rackitup.common.toml": "Rack It Up",
+  "rackitup.configuration.section.rackitup.common.toml.title": "Rack It Up",
+
+  "config.rackitup.boolean": "%s: %s",
+  "config.rackitup.requireCampfire": "Require Campfire",
+  "config.rackitup.weatherInteractions": "Enable Weather Interactions",
+  "config.rackitup.campfireBoosting": "Campfires Boost Progress",
+  "config.rackitup.boostAmount": "Campfire Boost Multiplier",
+
+  "config.rackitup.requireCampfire.tooltip": "§eDrying racks require campfires to be placed underneath to work",
+  "config.rackitup.weatherInteractions.tooltip": "§eDirect exposure to rain will undo drying progress",
+  "config.rackitup.campfireBoosting.tooltip": "§eCampfires placed beneath racks will speed up drying",
+  "config.rackitup.boostAmount.tooltip": "§eHow much faster drying is with campfire boosting (multiplier)"
+}

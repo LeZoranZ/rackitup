@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "rackitup:crimson_drying_rack"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "rackitup:blocks/crimson_drying_rack"
+}

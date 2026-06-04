@@ -1,0 +1,29 @@
+{
+  "__comment": "Model is in the center, top of the block",
+  "parent": "block/block",
+  "display": {
+    "gui": {
+      "rotation": [ 30, 225, 0 ],
+      "translation": [ 0, -3, 0 ],
+      "scale": [ 0.625, 0.625, 0.625 ]
+    }
+  },
+  "textures": {
+    "texture": "minecraft:block/oak_planks",
+    "particle": "#texture"
+  },
+  "elements": [
+    {
+      "from": [ 0, 12, 6 ],
+      "to": [ 16, 16, 10 ],
+      "faces": {
+        "north": { "texture": "#texture", "uv": [  0,  0, 16,  4 ] },
+        "east":  { "texture": "#texture", "uv": [  0,  0,  4,  4 ] },
+        "south": { "texture": "#texture", "uv": [  0,  0, 16,  4 ] },
+        "west":  { "texture": "#texture", "uv": [ 12,  0, 16,  4 ] },
+        "up":    { "texture": "#texture", "uv": [  0, 12, 16, 16 ] },
+        "down":  { "texture": "#texture", "uv": [  0,  0, 16,  4 ] }
+      }
+    }
+  ]
+}

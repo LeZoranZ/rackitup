@@ -1,0 +1,50 @@
+{
+  "tab.rackitup.name": "晾干架扩展",
+
+  "block.rackitup.drying_rack": "晾干架",
+  "block.rackitup.oak_drying_rack": "橡木晾干架",
+  "block.rackitup.spruce_drying_rack": "云杉木晾干架",
+  "block.rackitup.birch_drying_rack": "白桦木晾干架",
+  "block.rackitup.jungle_drying_rack": "丛林木晾干架",
+  "block.rackitup.acacia_drying_rack": "金合欢木晾干架",
+  "block.rackitup.dark_oak_drying_rack": "深色橡木晾干架",
+  "block.rackitup.mangrove_drying_rack": "红树木晾干架",
+  "block.rackitup.cherry_drying_rack": "樱花木晾干架",
+  "block.rackitup.bamboo_drying_rack": "竹晾干架",
+  "block.rackitup.crimson_drying_rack": "绯红木晾干架",
+  "block.rackitup.warped_drying_rack": "诡异木晾干架",
+
+  "item.rackitup.beef_jerky": "牛肉干",
+  "item.rackitup.chicken_jerky": "鸡肉干",
+  "item.rackitup.tropical_fish_jerky": "热带鱼干",
+  "item.rackitup.cod_jerky": "鳕鱼干",
+  "item.rackitup.monster_jerky": "腐肉干",
+  "item.rackitup.mutton_jerky": "羊肉干",
+  "item.rackitup.pork_jerky": "猪肉干",
+  "item.rackitup.pufferfish_jerky": "河豚干",
+  "item.rackitup.rabbit_jerky": "兔肉干",
+  "item.rackitup.salmon_jerky": "鲑鱼干",
+
+  "recipeType.drying": "晾干",
+
+  "jei.rackitup.drying_time": "%s秒",
+  "jei.rackitup.drying_time.hours": "%s小时",
+  "jei.rackitup.drying_time.minutes": "%s分钟",
+  "jei.rackitup.drying_time.seconds": "%s秒",
+  "jei.rackitup.drying_speed_mult": "速度倍率: x%s",
+
+  "rackitup.configuration.title": "晾干架扩展",
+  "rackitup.configuration.section.rackitup.common.toml": "晾干架扩展",
+  "rackitup.configuration.section.rackitup.common.toml.title": "晾干架扩展",
+
+  "config.rackitup.boolean": "%s: %s",
+  "config.rackitup.requireCampfire": "需要营火",
+  "config.rackitup.weatherInteractions": "启用天气交互",
+  "config.rackitup.campfireBoosting": "营火加速晾干进度",
+  "config.rackitup.boostAmount": "营火加速倍率",
+
+  "config.rackitup.requireCampfire.tooltip": "§e晾干架需要在其下方放置营火才能工作",
+  "config.rackitup.weatherInteractions.tooltip": " §e直接暴露在雨水下会取消晾干进度",
+  "config.rackitup.campfireBoosting.tooltip": " §e放置在晾干架下方的营火会加快晾干速度",
+  "config.rackitup.boostAmount.tooltip": "§e营火加速时晾干速度提升多少（倍率）"
+}
