@@ -97,7 +97,7 @@ public class Drying implements IRecipeCategory<DryingRecipe> {
 
         if(!campfireRequired && !boosting) return;
 
-        IRecipeSlotBuilder slot = builder.addSlot(RecipeIngredientRole.CATALYST, 8, 26).addIngredients(Ingredient.of(MTags.VALID_CAMPFIRES));
+        IRecipeSlotBuilder slot = builder.addSlot(RecipeIngredientRole.RENDER_ONLY, 8, 26).addIngredients(Ingredient.of(MTags.VALID_CAMPFIRES));
 
         if(boosting){
             slot.addRichTooltipCallback((view, tooltip) -> {tooltip.add(Component.translatable("jei.rackitup.drying_speed_mult", Config.CAMPFIRE_BOOST.get()).withStyle(ChatFormatting.GOLD));});

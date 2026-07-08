@@ -1,9 +1,11 @@
 package me.creeperscrown.rackitup.integration.jei;
 
 import me.creeperscrown.rackitup.RackItUp;
+import me.creeperscrown.rackitup.block.MBlocks;
 import me.creeperscrown.rackitup.integration.RecipeUtil;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
+import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.resources.ResourceLocation;
@@ -24,5 +26,10 @@ public class JEIPlugin implements IModPlugin {
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         registration.addRecipes(Drying.DRYING, RecipeUtil.getDryingRecipes());
+    }
+
+    @Override
+    public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
+        registration.addRecipeCatalyst(MBlocks.OAK_DRYING_RACK.get(), Drying.DRYING);
     }
 }

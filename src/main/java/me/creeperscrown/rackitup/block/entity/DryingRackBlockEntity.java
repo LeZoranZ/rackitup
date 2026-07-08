@@ -1,6 +1,7 @@
 package me.creeperscrown.rackitup.block.entity;
 
 import me.creeperscrown.rackitup.Config;
+import me.creeperscrown.rackitup.MTags;
 import me.creeperscrown.rackitup.recipe.DryingRecipe;
 import me.creeperscrown.rackitup.recipe.MRecipes;
 import net.minecraft.core.BlockPos;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.CampfireBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.AABB;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
@@ -64,18 +66,33 @@ public class DryingRackBlockEntity extends BlockEntity {
         }
 
         BlockState below = level.getBlockState(pos.below());
-        boolean campfireRequired = Config.CAMPFIRE_REQUIRED.get();
+        boolean boosterRequired = Config.CAMPFIRE_REQUIRED.get();
         boolean weatherInteraction = Config.WEATHER_INTERACTIONS.get();
         boolean boosting = Config.BOOSTER_CAMPFIRES.get();
+        boolean validBooster = below.is(MTags.VALID_BOOSTERS);
 
-        boolean isCampfire = below.getBlock() instanceof CampfireBlock;
-        boolean isLit = CampfireBlock.isLitCampfire(level.getBlockState(pos.below()));
+        boolean shouldBoost = false;
+
         boolean isRaining = level.isRainingAt(rack.getBlockPos()) && level.canSeeSky(rack.getBlockPos());
 
-        if(campfireRequired){
-            if(!isCampfire) return;
-            if(!isLit) return;
+        if(boosting && validBooster){
+            // if campfire
+            if(below.getBlock() instanceof CampfireBlock){
+                // only boost if campfire is lit, myb make configurable later
+                shouldBoost = CampfireBlock.isLitCampfire(level.getBlockState(pos.below()));
+            }
+
+            // if furnace-like
+            else if(below.hasProperty(BlockStateProperties.LIT)){
+                shouldBoost = below.getValue(BlockStateProperties.LIT);
+            }
+
+            // for everything else in the tag just enable boost by default
+            else {shouldBoost = true;}
         }
+
+        // if booster required but booster block doesn't meet conditions
+        if(boosterRequired && !shouldBoost){return;}
 
         DryingRecipe recipe = match.get();
         rack.maxProgress = recipe.getDryingTime();
@@ -83,7 +100,7 @@ public class DryingRackBlockEntity extends BlockEntity {
         if(weatherInteraction && isRaining){
             rack.progress = Math.max(0, rack.progress-1);
         } else {
-            double boost = (boosting && isCampfire && isLit) ? Math.max(1, Config.CAMPFIRE_BOOST.get()) : 1;
+            double boost = shouldBoost ? Math.max(1, Config.CAMPFIRE_BOOST.get()) : 1;
             rack.progress += boost;
         }
 
