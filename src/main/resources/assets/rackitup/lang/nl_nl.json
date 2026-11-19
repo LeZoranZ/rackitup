@@ -43,5 +43,7 @@
   "tooltip.rackitup.requireCampfire": "Droogrekken werken alleen als er een kampvuur onder staat",
   "tooltip.rackitup.weatherInteractions": "Blootstelling aan regen maakt het droogproces ongedaan",
   "tooltip.rackitup.campfireBoosting": "Droogrekken werken sneller als er een kampvuur onder staat",
-  "tooltip.rackitup.boostAmount": "Hoeveel sneller het drogen gaat met kampvuur eronder (vermenigvuldiger)"
+  "tooltip.rackitup.boostAmount": "Hoeveel sneller het drogen gaat met kampvuur eronder (vermenigvuldiger)",
+
+  "block_type.rackitup.drying_rack": "%s droogrek"
 }

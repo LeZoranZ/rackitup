@@ -2,6 +2,7 @@ package me.creeperscrown.rackitup;
 
 import me.creeperscrown.rackitup.block.MBlocks;
 import me.creeperscrown.rackitup.block.entity.MBlockEntities;
+import me.creeperscrown.rackitup.compat.ModCompat;
 import me.creeperscrown.rackitup.item.MItems;
 import me.creeperscrown.rackitup.recipe.MRecipes;
 import net.minecraft.core.registries.Registries;
@@ -9,6 +10,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -62,6 +64,8 @@ public class RackItUp {
         MRecipes.TYPES.register(modEventBus);
         MBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         TABS.register(modEventBus);
+
+        if(ModList.get().isLoaded("everycomp")){ModCompat.init();}
 
         MinecraftForge.EVENT_BUS.register(this);
 

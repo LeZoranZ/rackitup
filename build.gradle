@@ -125,6 +125,9 @@ repositories {
     maven {
         url = "https://maven.blamejared.com"
     }
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
 }
 
 dependencies {
@@ -136,6 +139,8 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     compileOnly "mezz.jei:jei-${minecraft_version}-forge:${jei_version}"
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
+    compileOnly fg.deobf("maven.modrinth:every-compat:1.20-2.9.29-forge")
+    compileOnly fg.deobf("maven.modrinth:moonlight:1.20-2.16.39-forge")
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

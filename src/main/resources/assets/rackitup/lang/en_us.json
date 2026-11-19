@@ -43,5 +43,7 @@
   "tooltip.rackitup.requireCampfire": "Drying racks require campfires to be placed underneath to work",
   "tooltip.rackitup.weatherInteractions": "Direct exposure to rain will undo drying progress",
   "tooltip.rackitup.campfireBoosting": "Campfires placed beneath racks will speed up drying",
-  "tooltip.rackitup.boostAmount": "How much faster drying is with campfire boosting (multiplier)"
+  "tooltip.rackitup.boostAmount": "How much faster drying is with campfire boosting (multiplier)",
+
+  "block_type.rackitup.drying_rack": "%s Drying Rack"
 }

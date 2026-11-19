@@ -43,5 +43,7 @@
   "tooltip.rackitup.requireCampfire": "晾干架需要在其下方放置营火才能工作",
   "tooltip.rackitup.weatherInteractions": " 直接暴露在雨水下会取消晾干进度",
   "tooltip.rackitup.campfireBoosting": " 放置在晾干架下方的营火会加快晾干速度",
-  "tooltip.rackitup.boostAmount": "营火加速时晾干速度提升多少（倍率）"
+  "tooltip.rackitup.boostAmount": "营火加速时晾干速度提升多少（倍率）",
+
+  "block_type.rackitup.drying_rack": "%s晾干架"
 }
